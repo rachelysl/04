@@ -2,19 +2,17 @@
 
 int main(void)
 {
-    int op1, op2;
+    int time;
+    int min, sec;
 
-    //scanf
-    printf("input two integers:");
-    scanf("%i %i", &op1, &op2);
+    printf("input the second : ");
+    scanf("%d", &time);
 
-    //printf
-    printf("%i + %i = %i\n", op1, op2, op1 + op2);
-    printf("%i - %i = %i\n", op1, op2, op1 - op2);
-    printf("%i * %i = %i\n", op1, op2, op1 * op2);
-    printf("%i / %i = %i\n", op1, op2, op1 / op2);
-    printf("%i %% %i = %i\n", op1, op2, op1 % op2);
+    min = time / 60;
+    sec = time % 60;
+
+    printf("the time is %d:%02d\n", min, sec);
 
     return 0;
-
 }
+  
